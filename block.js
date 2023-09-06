@@ -13,7 +13,7 @@ class Block {
     }
 
     static genesis() {
-        return new this (GENESIS_DATA);
+        return new this (GENESIS_DATA, MINE_RATE);
     }
 
     static mineBlock({ lastBlock, data }) {
